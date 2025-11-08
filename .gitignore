@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.Python
+*.egg-info/
+.vscode/
+.idea/
+*.swp
+*.swo
+output/
+*.json
+*.csv
+*.log
+.DS_Store
