@@ -2,7 +2,21 @@
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional
 from datetime import datetime
+from dataclasses import dataclass, field
 
+@dataclass
+class Team:
+    """Đại diện cho một đội bóng"""
+    id: int
+    name: str
+    city: str = ""  # Thành phố
+    founded_year: int = 0  # Năm thành lập (tùy chọn)
+    
+    def __repr__(self):
+        return f"{self.name}"
+    
+    def __str__(self):
+        return self.name
 @dataclass
 class Task:
     """Một công việc cần lên lịch"""
